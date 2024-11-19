@@ -1,6 +1,6 @@
 # Some changes I thought would be interesting for EVE
 
-### Remove in-space compressing
+### Remove in-space ore compression
 
 One of the big career choices in EVE online is to become a hauler. This is actually really good way to start since probably the most important first thing to learn about EVE is the space you're flying in and it's topology.
 
