@@ -42,7 +42,7 @@ class Score {
 
 ### 1. Move generic arithmetic functions outside of the class
 
-- Replaced all arithmetic methods with an update method that takes a normal function from n -> n to run inside the class context.
+Replace all arithmetic methods with an update method that takes a normal function from n -> n to run inside the class context.
 
 ```
 class Score {
@@ -84,7 +84,7 @@ console.log(
 
 ### 2. Move type and range checking routine outside of the class
 
-- Moved the type checkers and range validation that are useful in many other classes to external functions and passed them in to the class
+Move the type checkers and range validation that are useful in many other classes to external functions and passed them in to the class
 
 ```
 class Score {
@@ -131,9 +131,7 @@ console.log(
 
 ### 3. Add an Error object within the Score Set
 
-- This way we can call update method on both objects in this set with valid returns for both cases.
-
-- Returning the new ScoreError instead of throwing
+Return the new ScoreError instead of throwing. This way we can call update method on both objects in this set with valid returns for both cases.
 
 ```
 class Score {
@@ -174,7 +172,7 @@ class ScoreError {
 
 ### 4. Make error handling explicit in what objects are being constructed
 
-- Moved the construction routine for Score and ScoreError into it's own function.
+Move the construction routine for Score and ScoreError into it's own function.
 
 ```
 
@@ -228,7 +226,7 @@ console.log(
 ```
 ### 5. Reuse the construction routine for post update validation
 
-- Construction routine is already doing the validation for us, we can just reuse the routine now that it's a normal function outside the created objects
+Construction routine is already doing the validation for us, we can just reuse the routine now that it's a normal function outside the created objects
 
 ```
 
@@ -322,8 +320,8 @@ console.log(
 
 ### 7. Add a way to concatenate scores with short circuit on Error
 
-- Added .chain method that allows merging two score objects into a single score object
-- Added an add helper arithmetic function
+- Add .chain method that allows merging two score objects into a single score object
+- Add an add helper arithmetic function
 
 ```
 
