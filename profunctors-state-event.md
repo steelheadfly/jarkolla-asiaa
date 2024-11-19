@@ -204,7 +204,7 @@ let get = k => o => o[k];
 let set = k => v => ({
   [k]: v,
   timestamp: new Date().toISOString(),
-  user: getUser()
+  author: getUser()
 });
 
 let state1 = {
