@@ -9,7 +9,7 @@ class Score {
       if (num >= 0 && num <= 99) {
         this.num = num
       } else {
-        throw new Error('Score not in valid range score range')
+        throw new Error('Score not in valid score range')
       }
     } else {
       throw new Error('Constructor for Score expects a number')
@@ -19,21 +19,21 @@ class Score {
     if (this.num < 99) {
       this.num = this.num+1
     } else {
-      throw new Error('Score not in valid range score range')
+      throw new Error('Score not in valid score range')
     }
   }
   dec() {
     if (this.num > 0) {
       this.num = this.num-1
     } else {
-      throw new Error('Score not in valid range score range')
+      throw new Error('Score not in valid score range')
     }
   }
   double() {
     if (this.num * 2 <= 99) {
       this.num = this.num * 2
     } else {
-      throw new Error('Score not in valid range score range')
+      throw new Error('Score not in valid score range')
     }
   }
 
@@ -51,7 +51,7 @@ class Score {
       if (num >= 0 && num <= 99) {
         this.num = num
       } else {
-        throw new Error('Score not in valid range score range')
+        throw new Error('Score not in valid score range')
       }
     } else {
       throw new Error('Constructor for Score expects a number')
@@ -63,7 +63,7 @@ class Score {
       if (f(num) >= 0 && f(num) <= 99) {
         this.num = f(num)
       } else {
-        throw new Error('Score not in valid range score range')
+        throw new Error('Score not in valid score range')
       }
     }
   }
@@ -95,7 +95,7 @@ class Score {
         this.predicate = predicate;
         this.constraint = constraint;
       } else {
-        throw new Error('Score not in valid range score range')
+        throw new Error('Score not in valid score range')
       }
     } else {
       throw new Error('Constructor for Score expects a number')
@@ -107,7 +107,7 @@ class Score {
       if (constraint(f(num))) {
         this.num = f(num)
       } else {
-        throw new Error('Score not in valid range score range')
+        throw new Error('Score not in valid score range')
       }
     }
   }
@@ -142,7 +142,7 @@ class Score {
         this.predicate = predicate;
         this.constraint = constraint;
       } else {
-        return new ScoreError('Score not in valid range score range')
+        return new ScoreError('Score not in valid score range')
       }
     } else {
       return new ScoreError('Constructor for Score expects a number')
@@ -154,7 +154,7 @@ class Score {
       if (constraint(f(num))) {
         this.num = f(num)
       } else {
-        return new ScoreError('Score not in valid range score range')
+        return new ScoreError('Score not in valid score range')
       }
     }
   }
@@ -188,7 +188,7 @@ class Score {
       if (constraint(f(num))) {
         this.num = f(num)
       } else {
-        return new ScoreError('Score not in valid range score range')
+        return new ScoreError('Score not in valid score range')
       }
     }
   }
