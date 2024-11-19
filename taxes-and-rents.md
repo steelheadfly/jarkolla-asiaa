@@ -4,7 +4,7 @@ The 1970s turn to neoliberal economics gave us a new normal: Record profits year
 
 When one looks at the throughline on just how much of the total volume of all transactions go the various kinds of rents (dividends, interest on loans, real estate, privatised infrastructure, land, insurance), it's right to begin shifting the burden of taxation back on capital gains to fund projects for the commons.
 
-Georgism (and economics before the 1970s) defines the free market as free from/of rent. When money exchanges hands and that exchange produces something, or just at the very least maintains an existing one leads to abundance of actual wealth in the form of products and services and maintained assets. It's opposite is capital gains on rent, where nothing changes in the real world, just money is transferred from one bank account to another.
+Georgism (and economics before the 1970s) defines the free market as free from/of rent. When money exchanges hands and that exchange produces something, or just at the very least maintains the existing something leads to abundance of actual wealth in the form of products and services and maintained assets. It's opposite is capital gains on rent, where nothing changes in the real world, just money is transferred from one bank account to another.
 
 ### Competetiveness
 
