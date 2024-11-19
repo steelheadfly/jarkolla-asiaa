@@ -84,7 +84,7 @@ console.log(
 
 ### 2. Move type and range checking routine outside of the class
 
-Move the type checkers and range validation that are useful in many other classes to external functions and passed them in to the class
+Move the type checkers and range validation that are useful in many other classes to external functions and pass them in to the class
 
 ```
 class Score {
