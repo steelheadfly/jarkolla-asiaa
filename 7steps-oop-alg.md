@@ -321,7 +321,6 @@ console.log(
 ### 7. Add a way to concatenate scores with short circuit on Error
 
 - Add .chain method that allows merging two score objects into a single score object
-- Add an add helper arithmetic function
 
 ```
 
