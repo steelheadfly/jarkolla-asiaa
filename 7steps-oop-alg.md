@@ -397,4 +397,4 @@ console.log(
   - .of (construction routine)
   - .map (update)
   - .fold (get value and release the interface)
-  -. chain (concatenate within the set)
+  - .chain (concatenate within the set)
