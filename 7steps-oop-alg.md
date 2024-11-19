@@ -378,17 +378,22 @@ console.log(
     .map(ScoreSet => ScoreSet.map(inc)) // Increment Scores | ScoreErrors
     .reduce(chain(add)), // Concatenate into a single Score | ScoreError
 )
+
+// -> ScoreError { error: 'Value must be a number' }
+
 console.log(
   'case without errors: ',  [3, 5, 7]
     .map(createScore) // Turn list of inputs into list of Scores | ScoreErrors
     .map(ScoreSet => ScoreSet.map(inc)) // Increment Scores | ScoreErrors
     .reduce(chain(add)) // Concatenate into a single Score | ScoreError
 )
+
+// -> Score { num: 18 }
 ```
 
 ### Last notes since the .chain can be tough to digest
 
-- Chain concatenates two objects belonging to the same the same set into an object of the same set.
+- Chain concatenates two objects belonging to the same set into an object of the same set.
 - If the left hand functor F is an error object, the function from a => G.map is ignored and the return is just the functor F.
 - If the left hand functor F hits a success case, the a => G.map gets discharged with a in scope, directly calling the right hand functor G's map method to get b into scope.
 - If the right hand functor G hits an error case, the b => f(a, b) is ignored and the return is just the functor G.
