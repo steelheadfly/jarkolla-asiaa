@@ -214,18 +214,6 @@ let set = k => v => ({
   author: getUser()
 });
 
-let state1 = {
-  foo: {
-    bar: 'qweasd'
-  }
-};
-
-let state2 = {
-  foo: {
-    bar: null
-  }
-}
-
 let overFoo = dimap(get('foo'), set('foo'));
 let overBar = dimap(get('bar'), set('bar'));
 
@@ -251,6 +239,18 @@ let overOptional = dimap(
   Optional,
   fold(a => a)
 )
+
+let state1 = {
+  foo: {
+    bar: 'qweasd'
+  }
+};
+
+let state2 = {
+  foo: {
+    bar: null
+  }
+}
 
 console.log(
   'success case',
