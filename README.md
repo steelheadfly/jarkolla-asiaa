@@ -1,1 +1,1 @@
-# jarkolla-asiaa
+# thoughts
