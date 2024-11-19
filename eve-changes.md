@@ -22,4 +22,4 @@ Missions are the first thing that people enage in, but there should be more work
 
 ### Selling intel and safes
 
-It's really nice extra little content you can do on your own to fly out in a ship and set up safes in various systems and so on. But it'd be even nicer if it was made more mainstream. It's not clear from the outset that you can use scanner probes to save locations with, maybe some specific probelike drone for specialised frigate that makes that activity more explicit would go a long way, especially with a official market/interface to sell fresh intel/safes with.
+It's really nice extra little content you can do on your own to fly out in a ship and set up safes in various systems and so on. But it'd be even nicer if it was made more mainstream. It's not clear from the outset that you can use scanner probes to save locations with, maybe some specific probelike drone for specialised frigate gated to Explorers that makes that activity more explicit would go a long way, especially with a official market/interface to sell fresh intel/safes with.
