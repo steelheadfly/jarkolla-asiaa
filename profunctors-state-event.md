@@ -99,12 +99,16 @@ Since we can create any kind of getter/setter or pre/post routine that is recurs
 ```
 let map = f => F => F.map(f);
 
+let state = {
+  foo: 'foobar'
+}
+
 console.log(
   overFoo(
     overString(
       map(c => c+'-')
     )
-  )
+  )(state)
 )
 
 // -> { foo: 'f-o-o-b-a-r-' }
@@ -173,7 +177,10 @@ let set = k => v => ({
   author: getUser()
 });
 
-let overFoo = dimap(get('foo), set('foo'))
+let overFoo = dimap(
+  get('foo),
+  set('foo')
+)
 
 let state = {
   foo: 12,
