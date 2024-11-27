@@ -397,7 +397,7 @@ console.log(
 - If the left hand functor F is an error object, the function from a => G.map is ignored and the return is just the functor F.
 - If the left hand functor F hits a success case, the a => G.map gets discharged with a in scope, directly calling the right hand functor G's map method to get b into scope.
 - If the right hand functor G hits an error case, the b => f(a, b) is ignored and the return is just the functor G.
-- If the left hand and the right hand functors are both Score functors, then the both a => and b => functions get discharged and the right hand functor is reused with the construction routine post validation used in it's .map method
+- If the left hand and the right hand functors are both success cases, then both a => and b => functions get discharged and the right hand functor is reused with the construction routine for post validation in it's .map method
 - For an algebraic set of functors the minimum viable product is
   - .of (construction routine)
   - .map (update)
